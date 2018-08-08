@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Татьяна  Морозова](https://up.htmlacademy.ru/htmlcss/22/user/431381).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/22/user/70260).
 
 ---
 
