@@ -4,123 +4,160 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
   		  <a class="main-header-logo">
-          <img src="http://placehold.it" width="150" height="100"
-          alt="Логотип студии Нёрдс">
+          <img src="logo.svg" width="150" height="100" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li class="link-navigation"><a href="studio.html">СТУДИЯ</a></li>
-          <li class="link-navigation"><a href="customers.html">КЛИЕНТЫ</a></li>
-          <li class="link-navigation"><a href="shop.html">МАГАЗИН</a></li>
-          <li class="link-navigation"><a href="contacts.html">КОНТАКТЫ</a></li>
+          <li class="link-navigation">
+            <a href="studio.html">СТУДИЯ</a>
+          </li>
+          <li class="link-navigation">
+            <a href="customers.html">КЛИЕНТЫ</a>
+          </li>
+          <li class="link-navigation">
+            <a href="shop.html">МАГАЗИН</a>
+          </li>
+          <li class="link-navigation">
+            <a href="contacts.html">КОНТАКТЫ</a>
+          </li>
         </ul>
         <ul class="user-navigation">
-          <li class="link-basket"><a href="exit.html">КОРЗИНА</a></li>
+          <li class="link-navigation">
+            <a href="exit.html">КОРЗИНА</a>
+          </li>
         </ul>
   		</nav>
-
-      <!думаю весь слайдер ссылка как оформить не знаю!>
-      <div class="main-slider">
-        <p class="main-tagline">Долго,дорого,скрупулезно.</p>
-        <p class="text-page">Математически выверенный дизайн  для вашего сайта
-         или мобильного приложения.</p>
-        <button class="button-slider">УЗНАТЬ БОЛЬШЕ</button>
-        <!ничего не помню по кнопкам!>
-        <a class="main-slider-image">
-          <img src="http://placehold.it" width="280" height="160"
-          alt="Долго,дорого,скрупулезно.">
-        </a>
+      <div class="slider">
+        <div class="slide slide-first">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p class="text-page">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-second">
+          <h2>Любим математику как никто другой</h2>
+          <p class="text-page">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-third">
+          <h2>Только ночь, только хардкор</h2>
+          <p class="text-page">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
       </div>
   	</header>
-
-    <main class="conteiner">
-      <h1 class="visual-hidden">Студия Нёрдс</h1>
+    <main class="container">
+      <h1 class="visually-hidden">Студия Нёрдс</h1>
       <section class="conteiner-shop">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="catalog-shop">
           <li class="catalog-item first-item">
-            <h3>
-              <a href="catalog.html">
-                <span class="catalog-category">ВЕБ-САЙТЫ</span>
-              </a>
-            </h3>
+            <h3>Веб-сайты</h3>
             <p class="catalog-item-image first-image">
-              <a href="catalog.html">
-                <img src="http://placehold.it" width="150" height="100" alt="illustration-1">
-              </a>
+              <img src="illustration-1.png" width="150" height="100" alt="Компьютер">
             </p>
-            <p class="catalog-item-tagline text-page">Мир никогда не будет прежним
-               после того как увидит ваш сайт!</p>
-            <p class="catalog-item-button first-button">
-              <a class="button" href="#">ЗАКАЗАТЬ</a>
-            </p>
+            <p class="catalog-item-tagline text-page">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="#">Заказать</a>
           </li>
-
           <li class="catalog-item second-item">
-            <h3>
-              <a href="#catalog.html">
-                <span class="catalog-category">ПРИЛОЖЕНИЯ</span>
-              </a>
-            </h3>
+            <h3>Приложения</h3>
             <p class="catalog-item-image second-image">
-              <a href="catalog.html">
-                <img src="http://placehold.it" width="150" height="100" alt="illustration-2">
-              </a>
+              <img src="illustration-2.png" width="150" height="100" alt="Смартфон">
             </p>
-            <p class="catalog-item-tagline text-page">Покорите топ-10 приложений
-              в AppStore и Google Play</p>
-            <p class="catalog-item-button second-button">
-              <a class="button" href="#">ЗАКАЗАТЬ</a>
-            </p>
+            <p class="catalog-item-tagline text-page">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="catalog-item third-item">
-            <h3>
-              <a href="#catalog.html">
-                <span class="catalog-category">ПРЕЗЕНТАЦИИ</span>
-              </a>
-            </h3>
+            <h3>Презентации</h3>
             <p class="catalog-item-image third-image">
-              <a href="catalog.html">
-                <img src="http://placehold.it" width="150" height="100" alt="illustration-3">
-              </a>
-            </p>
-            <p class="catalog-item-tagline text-page">Вы даже не подозреваете,
-              насколько вы изумительны!</p>
+              <img src="illustration-3.png" width="150" height="100" alt="Проектор">
+            </p>  
+            <p class="catalog-item-tagline text-page">Вы даже не подозреваете, насколько вы изумительны!</p>
             <p class="catalog-item-button third-button">
-              <a class="button" href="#">ЗАКАЗАТЬ</a>
+            <a class="button" href="#">Заказать</a>
             </p>
           </li>
         </ul>
       </section>
-
-
-      <section class="conteiner-presentation">
+      <section class="container-presentation">
         <h2 class="visually-hidden">О нас</h2>
-      <section class="text-presentation">
-        <ul>
-          <li class="first-presentation">
-            <h3 class="visually-hidden">Презентация студии</h3>
-                <p class="tagline-presentation">Мы — маленькая, но гордая
-                дизайн-студия из Краснодара.</p>
-                <p class="text-page">Исповедуем принципы минимализма и чистоты.
-                  Ставим математический расчет превыше креатива.
-                Работаем не покладая рук, как роботы.</p>
-          </li>
-          <li class="second-presentation">
-            <h3 class="presentation-services">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
-              <ul class="list-services">
-                <li class="text-page">Веб-сайтов любой сложности</li>
-                <li class="text-page">Мобильных приложений для iOS и Android</li>
-                <li class="text-page">Слайдшоу и видео для корпоративных презентаций</li>
-              </ul>
-          </li>
-        </ul>
+        <section class="text-presentation">
+          <ul>
+            <li class="first-presentation">
+                <p class="tagline-presentation">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="text-page">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <h3 class="presentation-services">Выполняем заказы на разработку:</h3>
+                <ul class="list-services">
+                  <li class="text-page">Веб-сайтов любой сложности</li>
+                  <li class="text-page">Мобильных приложений для iOS и Android</li>
+                  <li class="text-page">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="statistics-presentation">
+          <p class="logo">
+          <img src="http://placehold.it" width="150" height="100" alt="Логотип Нёрдс">
+          </p>
+          <h3 class="presentation-services">с 2004 года Любим точность во всем:</h3>
+          <table>
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </section>
       </section>
+      <section class="container-customers">
+        <h2 class="visually-hidden">Наши клиенты</h2>
+          <a class="link-customers" href="https://htmlacademy.ru/">
+          <img src="htmlacademy.png" width="150" height="100" alt="Логотип Htmlacademy">
+          </a>        
+          <a class="link-customers" href="#">
+            <img src="borodinski.png" width="150" height="100" alt="Логотип Borodinski">
+          </a>
+          <a class="link-customers" href="#">
+            <img src="pink.png" width="150" height="100" alt="Логотип Pink">
+          </a>
+          <a class="link-customers" href="#">
+            <img src="mishka.png" width="150" height="100" alt="Логотип Mishka">
+          </a>
       </section>
+      <div class="map">
+        <img src="map.png" width="150" height="100" alt="Карта">
+      </div>
     </main>
+    <footer class="main-footer">
+      <p class="footer-contacts">
+        <h3>Nёrds design studio</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812)275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+    <section class="modal">
+      <h2>Напишите нам</h2> 
+      <p>Ваше имя</p>  
+      <p>Ваш e-mail:</p>  
+      <p>Текст письма</p>
+      <a href="#" class="button"></a>
+    </section>
+    !-- здесь будет форма --!>
   </body>
 </html>
