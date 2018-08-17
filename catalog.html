@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-
   <body>
   	<header class="main-header">
       <nav class="main-navigation">
@@ -13,111 +12,154 @@
         </a>
         <ul class="site-navigation">
           <li class="link-navigation">
-            <a href="#">СТУДИЯ</a>
+            <a href="studio.html">СТУДИЯ</a>
           </li>
           <li class="link-navigation">
-            <a href="#">КЛИЕНТЫ</a>
+            <a href="customers.html">КЛИЕНТЫ</a>
           </li>
           <li class="link-navigation site-navigation-current">
             <a href="shop.html">МАГАЗИН</a>
           </li>
           <li class="link-navigation">
-            <a href="#">КОНТАКТЫ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
           </li>
         </ul>
         <ul class="user-navigation">
           <li class="link-navigation">
-            <a href="#">КОРЗИНА</a>
+            <a href="exit.html">КОРЗИНА</a>
           </li>
         </ul>
       </nav>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
   	</header>
     <main class="container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!-- Здесь будет форма -->
+        <div class="price-filter">
+          <!-- Здесь будет форма -->
+        </div>
+        <div class="type-filter">
+          <!-- Здесь будет форма -->
+        </div>
+        <div class="features-filter">
+          <!-- Здесь будет форма -->
+        </div>
       </section>
-      <p>Сортировать</p>
-      <!-- Здесь будет форма -->
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По названию</p>
-      <section class="shop-catalog">
-        <h2 class="visually-hidden">Список готовых шаблонов</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>
-              <p>Sedona</p>
-              <span>Информационный сайт для туристов</span>
-            </h3>
-            <p>
+      <section class="shop">
+        <div class="shop-progress">
+          <h3>Сортировать</h3>
+            <ul>
+              <li>
+                <p>По цене</p>
+              </li>
+              <li>
+                <p>По типу</p>
+              </li>
+              <li>
+                <p>По названию</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="hidden">По убыванию</p>
+              </li>
+              <li>
+                <p class="hidden">По возрастанию</p>
+              </li>
+            </ul>
+        </div>
+        <ul class="shop-catalog">
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <p class="card-img">
               <img src="sedona.jpg" width="150" height="100" alt="Sedona">
             </p>
-            <p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Sedona</a></h3>
+              <p>Информационный сайт для туристов</P>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
-          <li class="catalog-item">
-            <h3>
-              <p>Pink</p>
-              <span>Продуктовый лендинг приложения для iOS и Android</span>
-            </h3>
-            <p>
-              <img src="pink.jpg" width="150" height="100" alt="Pink">
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
             </p>
-            <p>
+            <p class="card-img">
+              <img src="pink.jpg" width="150" height="100" alt="pink">
+            </p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Pink</a></h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
-          <li class="catalog-item">
-            <h3>
-              <p>Borodinski</p>
-              <span>-</span>
-            </h3>
-            <p>
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <p class="card-img">
               <img src="borodinski.jpg" width="150" height="100" alt="Borodinski">
             </p>
-            <p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Borodinski</a></h3>
+              <p>Барбершоп Borodinski</P>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
-          <li class="catalog-item">
-            <h3>
-              <p>Mishka</p>
-              <span>Милые штуки ручной работы</span>
-            </h3>
-            <p>
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <p class="card-img">
               <img src="mishka.jpg" width="150" height="100" alt="Mishka">
             </p>
-            <p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Mishka</a></h3>
+              <p>Милые штуки ручной работы</P>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
-          <li class="catalog-item">
-            <h3>
-              <p>Learning</p>
-              <span>Милые штуки ручной работы</span>
-            </h3>
-            <p>
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <p class="card-img">
               <img src="learning.jpg" width="150" height="100" alt="Learning">
             </p>
-            <p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Learning</a></h3>
+              <p>Учись</P>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
-          <li class="catalog-item">
-            <h3>
-              <p>Kvast</p>
-              <span>Милые штуки ручной работы</span>
-            </h3>
-            <p>
+          <li class="shop-card">
+            <p class="card-points">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <p class="card-img">
               <img src="kvast.jpg" width="150" height="100" alt="Kvast">
             </p>
-            <p>
+            <div class="card-link">
+              <h3><a class="head-link" href="#">Kvast</a></h3>
+              <p>Пей квас</P>
               <a class="button" href="#">9 900 руб.</a>
-            </p>
+            </div>
           </li>
+        </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
             <a>1</a>
@@ -133,20 +175,17 @@
           </li>
         </ul>
       </section>
-
     </main>
     <footer class="main-footer">
-      <div class="map">
+      <div class="map footer-contacts">
         <img src="map.png" width="150" height="100" alt="Карта">
-      </div>
-      <div class="footer-contacts">
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812)275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </div>
       <div class="footer-social">
-        <ul>
+        <ul>  
           <li>
             <a class="social-button" href="#">Вконтакте</a>
           </li>
@@ -158,8 +197,10 @@
           </li>
         </ul>
       </div>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-down">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
