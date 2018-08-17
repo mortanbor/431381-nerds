@@ -6,9 +6,9 @@
   </head>
 
   <body>
-  	<header class="header">
-      <nav class="navigation">
-        <a class="header-logo" href="index.html">
+  	<header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="logo.svg" width="150" height="100" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
@@ -30,37 +30,108 @@
             <a href="#">КОРЗИНА</a>
           </li>
         </ul>
-        <h1>Магазин готовых шаблонов</h1>
       </nav>
   	</header>
-    <main>
-      <form></form>
-      <div></div>
-      <div class="shop">
-        <ul>
-          <li class="shop-first">
-            <a class="main-header-logo">
-              <img src="logo.svg" width="150" height="100" alt="Логотип студии Нёрдс">
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <!-- Здесь будет форма -->
+      </section>
+      <p>Сортировать</p>
+      <ul class="breadcrumbs">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
+      </ul>
+      <section class="shop-catalog">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a class="first-unit">
+              <img src="sedona.svg" width="150" height="100" alt="Сайт Sedona">
             </a>
           </li>
+          <li class="catalog-item">
+            <a class="second-unit">
+              <img src="pink.svg" width="150" height="100" alt="Сайт Pink">
+            </a>
+          </li>
+           <li class="catalog-item">
+            <a class="third-unit">
+              <img src="borodinski.svg" width="150" height="100" alt="Сайт Borodinski">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="fourth-unit">
+              <img src="mishka.svg" width="150" height="100" alt="Сайт Mishka">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="fifth-unit">
+              <img src="learning.svg" width="150" height="100" alt="Сайт Learning">
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="sixth-unit">
+              <img src="kvast.svg" width="150" height="100" alt="Сайт Кваст">
+            </a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a>1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item next">
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
 
-
-
-
-
-
-
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <img src="map.png" width="150" height="100" alt="Карта">
+      </div>
+      <div class="footer-contacts">
+        <h3>Nёrds design studio</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812)275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
         </ul>
       </div>
-      <div></div>
-    </main>
-
-
-  
-
-     
-        
-
-    
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <p>Ваше имя</p>
+      <p>Ваш e-mail:</p>
+      <p>Текст письма</p>
+      <a href="#" class="button"></a>
+    </section>
+    !-- здесь будет форма --!>
   </body>
 </html>
