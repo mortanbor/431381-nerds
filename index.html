@@ -26,7 +26,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="link-navigation">
-            <a href="exit.html">КОРЗИНА</a>
+            <a class="link-navigation" href="exit.html">КОРЗИНА</a>
           </li>
         </ul>
   		</nav>
@@ -138,7 +138,7 @@
     </main>
     <footer class="main-footer">
       <div class="map footer-contacts">
-        <img src="img/content/index/map-marker.jpg" width="1440" height="785" alt="Карта">
+        <img src="img/content/index/map-marker.jpg" width="1440" height="785" alt="Карта" aria-label="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8, тел. +7 (812)275-75-75">
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812)275-75-75</p>
@@ -147,13 +147,13 @@
       <div class="footer-social">
         <ul>  
           <li>
-            <a class="social-button" href="#">Вконтакте</a>
+            <a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a>
           </li>
           <li>
-            <a class="social-button" href="#">Фейсбук</a>
+            <a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a>
           </li>
           <li>
-            <a class="social-button" href="#">Инстаграм</a>
+            <a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a>
           </li>
         </ul>
       </div>
@@ -162,13 +162,28 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal-form">
       <h2>Напишите нам</h2>
-      <p>Ваше имя</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма</p>
-      <a href="#" class="button"></a>
+      <button class="button" aria-label="Закрыть окно написать нам">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+      </button>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-form">
+          <label for="name-form">Ваше имя:</label>
+          <input id="name-form" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-form">
+          <label for="mail-form">Ваш e-mail:</label>
+          <input id="mail-form" type="text" name="e-mail" value="" placeholder="e-mail@example.com">
+        </p>
+        <p class="write-form">
+          <label for="message-form">Текст письма:</label>
+          <textarea id="message-form" name="message" rows="4" cols="40" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>  
     </section>
-    !-- здесь будет форма --!>
   </body>
 </html>
