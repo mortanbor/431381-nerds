@@ -37,55 +37,61 @@
         <h2 class="visually-hidden">Фильтры для выбора готовых шаблонов</h2>
         <form class="price-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend>Стоимость:</legend>
-              <label for="pricecount" aria-label="Выбор шаблона по стоимости"></label>
-              <input type="range" id="pricecount" name="price" min="0" max="15000" step="1">
-              <div>
-              <p> от <output name="pricecountval"> 0 </output></p>
-              <p> до <output name="pricecountval"> 15000 </output></p>
-              </div>
+            <legend class="filters-text">Стоимость:</legend>
+              <div class="circle">Кружок</div>
+              <div class="circle">Кружок</div>
+              <div class="line">Полоска</div>
+              <div class="line">Полоска</div>
+              <p class="countnumber"> 
+                <label class="pricecount" for="pricecount-one">от</label> 
+                <input type="text" id="pricecount-one" name="pricenumber" value="0">
+              </p>
+              <p class="countnumber">
+                <label class="pricecount" for="pricecount-two">до</label> 
+                <input type="text" id="pricecount-two" name="pricenumber" value="15000">
+              </p>
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
+            <legend class="filters-text">Сетка:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="option" value="adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <label class="filterstext" for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-fixed" name="option" value="fixe">
-                <label for="filter-fixed">Фиксированная</label>
+                <label class="filterstext" for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-rubber" name="option" value="rubber">
-                <label for="filter-rubber">Резиновая</label>
+                <label class="filterstext" for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
-              <ul>
-                <li class="filter-feature">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
-                  <label for="filter-slider">Слайдер</label>
-                </li>
-                <li class="filter-feature">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-advantblock" name="advantblock">
-                  <label for="filter-advantblock">Блок преимуществ</label>
-                </li>
-                <li class="filter-feature">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
-                  <label for="filter-news">Новости</label>
-                </li>
-                <li class="filter-feature">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-gallery" name="gallery">
-                  <label for="filter-gallery">Галерея</label>
-                </li>
-                <li class="filter-feature">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
-                  <label for="filter-basket">Корзина</label>
-                </li>
-              </ul>
+            <legend class="filters-text">Особенности:</legend>
+            <ul>
+              <li class="filter-feature">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
+                <label class="filterstext" for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-feature">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-advantblock" name="advantblock">
+                <label class="filterstext" for="filter-advantblock">Блок преимуществ</label>
+              </li>
+              <li class="filter-feature">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
+                <label class="filterstext" for="filter-news">Новости</label>
+              </li>
+              <li class="filter-feature">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-gallery" name="gallery">
+                <label class="filterstext" for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-feature">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
+                <label class="filterstext" for="filter-basket">Корзина</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="filter-button button" type="submit">Показать</button>
         </form>
@@ -255,16 +261,15 @@
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-form">
           <label for="name-form">Ваше имя:</label>
-          <input id="name-form" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="name-form" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="write-form">
           <label for="mail-form">Ваш e-mail:</label>
-          <input id="mail-form" type="email" name="e-mail" value="" placeholder="e-mail@example.com">
+          <input id="mail-form" type="email" name="e-mail" placeholder="e-mail@example.com">
         </p>
         <p class="write-form">
           <label for="message-form">Текст письма:</label>
-          <textarea id="message-form" name="message" rows="4" cols="40" placeholder="В свободной форме">
-          </textarea>
+          <textarea id="message-form" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>  
