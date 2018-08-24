@@ -12,21 +12,21 @@
         </a>
         <ul class="site-navigation">
           <li class="link-navigation">
-            <a href="studio.html">СТУДИЯ</a>
+            <a href="studio.html">Студия</a>
           </li>
           <li class="link-navigation">
-            <a href="customers.html">КЛИЕНТЫ</a>
+            <a href="customers.html">Клиенты</a>
           </li>
           <li class="link-navigation site-navigation-current">
-            <a href="shop.html">МАГАЗИН</a>
+            <a href="shop.html">Магазин</a>
           </li>
           <li class="link-navigation">
-            <a href="contacts.html">КОНТАКТЫ</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
         <ul class="user-navigation">
           <li class="link-navigation">
-            <a href="exit.html">КОРЗИНА</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -34,16 +34,61 @@
   	</header>
     <main class="container">
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <div class="price-filter">
-          <!-- Здесь будет форма -->
-        </div>
-        <div class="type-filter">
-          <!-- Здесь будет форма -->
-        </div>
-        <div class="features-filter">
-          <!-- Здесь будет форма -->
-        </div>
+        <h2 class="visually-hidden">Фильтры для выбора готовых шаблонов</h2>
+        <form class="price-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость:</legend>
+              <label for="pricecount" aria-label="Выбор шаблона по стоимости"></label>
+              <input type="range" id="pricecount" name="price" min="0" max="15000" step="1">
+              <div>
+              <p> от <output name="pricecountval"> 0 </output></p>
+              <p> до <output name="pricecountval"> 15000 </output></p>
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="option" value="adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-fixed" name="option" value="fixe">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-rubber" name="option" value="rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-feature">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-feature">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-advantblock" name="advantblock">
+                  <label for="filter-advantblock">Блок преимуществ</label>
+                </li>
+                <li class="filter-feature">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-feature">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-gallery" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-feature">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="shop">
         <div class="shop-progress">
@@ -204,13 +249,25 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal-form">
       <h2>Напишите нам</h2>
-      <p>Ваше имя</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма</p>
-      <a href="#" class="button"></a>
+      <button class="button" type="button" aria-label="Закрыть окно написать нам">Закрыть окно</button>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-form">
+          <label for="name-form">Ваше имя:</label>
+          <input id="name-form" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-form">
+          <label for="mail-form">Ваш e-mail:</label>
+          <input id="mail-form" type="email" name="e-mail" value="" placeholder="e-mail@example.com">
+        </p>
+        <p class="write-form">
+          <label for="message-form">Текст письма:</label>
+          <textarea id="message-form" name="message" rows="4" cols="40" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>  
     </section>
-    !-- здесь будет форма --!>
   </body>
 </html>
