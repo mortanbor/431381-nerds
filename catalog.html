@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -18,7 +21,7 @@
             <a href="customers.html">Клиенты</a>
           </li>
           <li class="link-navigation site-navigation-current">
-            <a href="shop.html">Магазин</a>
+            <a href="catalog.html">Магазин</a>
           </li>
           <li class="link-navigation">
             <a href="contacts.html">Контакты</a>
@@ -38,18 +41,20 @@
         <form class="price-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend class="filters-text">Стоимость:</legend>
+            <div class="range">
               <div class="circle">Кружок</div>
               <div class="circle">Кружок</div>
               <div class="line">Полоска</div>
               <div class="line">Полоска</div>
-              <p class="countnumber"> 
-                <label class="pricecount" for="pricecount-one">от</label> 
-                <input type="text" id="pricecount-one" name="pricenumber" value="0">
-              </p>
-              <p class="countnumber">
-                <label class="pricecount" for="pricecount-two">до</label> 
-                <input type="text" id="pricecount-two" name="pricenumber" value="15000">
-              </p>
+            </div>
+            <p class="countnumber"> 
+              <label class="pricecount" for="pricecount-one">от</label> 
+              <input type="text" id="pricecount-one" name="pricenumber" value="0">
+            </p>
+            <p class="countnumber">
+              <label class="pricecount" for="pricecount-two">до</label> 
+              <input type="text" id="pricecount-two" name="pricenumber" value="15000">
+            </p>
           </fieldset>
           <fieldset>
             <legend class="filters-text">Сетка:</legend>
