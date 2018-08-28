@@ -40,7 +40,7 @@
         <h2 class="visually-hidden">Фильтры для выбора готовых шаблонов</h2>
         <form class="price-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend class="filters-text">Стоимость:</legend>
+            <legend class="filters-text headnames">Стоимость:</legend>
             <div class="range">
               <div class="circle">Кружок</div>
               <div class="circle">Кружок</div>
@@ -57,7 +57,7 @@
             </p>
           </fieldset>
           <fieldset>
-            <legend class="filters-text">Сетка:</legend>
+            <legend class="filters-text headnames">Сетка:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="option" value="adaptive" checked>
@@ -74,7 +74,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="filters-text">Особенности:</legend>
+            <legend class="filters-text headnames">Особенности:</legend>
             <ul>
               <li class="filter-feature">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
@@ -103,7 +103,7 @@
       </section>
       <section class="shop">
         <div class="shop-progress">
-          <h2>Сортировать</h2>
+          <h2 class="headnames">Сортировать</h2>
           <ul>
             <li>
               <a href="#">По цене</a>
@@ -135,7 +135,7 @@
               <img src="img/content/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Sedona</a></h2>
+              <h2><a class="head-link headnames" href="#">Sedona</a></h2>
               <p>Информационный сайт для туристов</P>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -150,7 +150,7 @@
               <img src="img/content/catalog/img-pink.jpg" width="360" height="576" alt="pink">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Pink</a></h2>
+              <h2><a class="head-link headnames" href="#">Pink</a></h2>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -165,7 +165,7 @@
               <img src="img/content/catalog/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Borodinski</a></h2>
+              <h2><a class="head-link headnames" href="#">Borodinski</a></h2>
               <p>Барбершоп Borodinski</P>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -180,7 +180,7 @@
               <img src="img/content/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Mishka</a></h2>
+              <h2><a class="head-link headnames" href="#">Mishka</a></h2>
               <p>Милые штуки ручной работы</P>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -195,7 +195,7 @@
               <img src="img/content/catalog/img-aplus.jpg" width="360" height="576" alt="Aplus">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Aplus</a></h2>
+              <h2><a class="head-link headnames" href="#">Aplus</a></h2>
               <p>Учись</P>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -210,7 +210,7 @@
               <img src="img/content/catalog/img-kvast.jpg" width="360" height="576" alt="Kvast">
             </p>
             <div class="card-link">
-              <h2><a class="head-link" href="#">Kvast</a></h2>
+              <h2><a class="head-link headnames" href="#">Kvast</a></h2>
               <p>Пей квас</P>
               <a class="button" href="#">9 900 руб.</a>
             </div>
@@ -234,24 +234,22 @@
     </main>
     <footer class="main-footer">
       <div class="map footer-contacts">
-        <img src="img/content/catalog/map-marker.jpg" width="1440" height="765" alt="Карта">
-        <div>
-          <h2>Nёrds design studio</h2>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812)275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
-        </div>
+        <img src="img/content/index/map-marker.jpg" width="1440" height="785" alt="Карта" aria-label="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8, тел. +7 (812)275-75-75">
+        <h3 class="studio-names headnames">Nёrds design studio</h3>
+        <p class="studio-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812)275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
       </div>
       <div class="footer-social">
         <ul>  
           <li>
-            <a class="social-button" href="#">Вконтакте</a>
+            <a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a>
           </li>
           <li>
-            <a class="social-button" href="#">Фейсбук</a>
+            <a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a>
           </li>
           <li>
-            <a class="social-button" href="#">Инстаграм</a>
+            <a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a>
           </li>
         </ul>
       </div>
@@ -264,15 +262,15 @@
       <h2>Напишите нам</h2>
       <button class="button" type="button" aria-label="Закрыть окно написать нам">Закрыть окно</button>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="write-form">
+        <p>
           <label for="name-form">Ваше имя:</label>
           <input id="name-form" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p class="write-form">
+        <p>
           <label for="mail-form">Ваш e-mail:</label>
           <input id="mail-form" type="email" name="e-mail" placeholder="e-mail@example.com">
         </p>
-        <p class="write-form">
+        <p>
           <label for="message-form">Текст письма:</label>
           <textarea id="message-form" name="message" placeholder="В свободной форме"></textarea>
         </p>
