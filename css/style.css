@@ -94,8 +94,6 @@ a {
   list-style: none;
 }
 
-
-
 .caption-item {
   font-size: 24px;
   line-height: 30px;
@@ -136,6 +134,37 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.countnumber label,
+.countnumber input {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee; 
+}
+
+.shop ul {
+  list-style: none;
+}
+
+.shop-progress a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.card-link p {
+  color: #666666;
+}
+
+.pagination-list a {
   color: #000000;
 }
 
