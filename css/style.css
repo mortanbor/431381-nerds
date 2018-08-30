@@ -17,6 +17,15 @@ a {
   background-color: #eeeeee;
 }
 
+.main-navigation a:hover,
+.main-navigation a:focus {
+  opacity: 0.8;
+}
+
+.main-navigation a:active {
+  opacity: 0.3;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -38,12 +47,14 @@ a {
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover {
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #fb565a;
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a:active,
+.user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -146,6 +157,19 @@ a {
   color: #283136;
 }
 
+.link-customers a {
+  opacity: 0.2;
+}
+
+.link-customers a:hover,
+.link-custimers a:focus {
+  opacity: 1;
+}
+
+.link-customers a:active {
+  opacity: 0.1;
+}
+
 .filter-button {
   color: #000000;
 
@@ -166,12 +190,37 @@ a {
 
 .pagination-list a {
   color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-list a:hover {
+  color: #000000;
+
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:focus {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+}
+
+.pagination-list a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: solid 2px #dbdbdb;
 }
 
 .main-footer p {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+}
+
+.footer-social ul {
+  list-style: none;
 }
 
 .footer-social a {
@@ -211,10 +260,77 @@ a {
 .write-form input,
 .write-form textarea {
   font: inherit;
+  color: #d7dcde;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
 
+.write-form input:hover,
+.write-form textarea:hover,
+.filter-button:hover {
+  color: #b4b9bb;
+
+  background-color: #ffffff;
+
+  border: solid 2px #b4b9bb;
+}
+
+.write-form input:focus,
+.write-form textarea:focus,
+.filter-button:focus {
+  color: #444444;
+
+  background-color: #ffffff;
+
+  border: solid 2px #000000;
+}
+
+.write-form input:invalid { 
+  color: #e74246;
+
+  background-color: #ffffff;
+
+  border: solid 2px #e74246;
+}
+
+/* ----- Сеточные стили ----- */
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.main-header-logo {
+  padding-left: 20px;
+}
 
 
+.site-navigation {
+  width: 445px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.user-navigation {
+  width: 135px;
+  margin-left: auto;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
