@@ -10,28 +10,30 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation container">
-  		  <a class="main-header-logo">
-          <img src="img/content/index/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li class="link-navigation">
-            <a href="studio.html">Студия</a>
-          </li>
-          <li class="link-navigation">
-            <a href="customers.html">Клиенты</a>
-          </li>
-          <li class="link-navigation">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="link-navigation">
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="link-navigation">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="main-navigation-wrapper">
+    		  <a class="main-header-logo">
+            <img src="img/content/index/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li class="link-navigation">
+              <a href="studio.html">Студия</a>
+            </li>
+            <li class="link-navigation">
+              <a href="customers.html">Клиенты</a>
+            </li>
+            <li class="link-navigation">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="link-navigation">
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="link-navigation">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
   		</nav>
       <div class="slider">
         <div class="slide slide-first">
@@ -84,6 +86,7 @@
       </section>
       <section class="container-presentation">
         <h2 class="visually-hidden">О нас</h2>
+        <div class="presentation-parts">
         <section class="text-presentation">
           <p class="tagline-presentation">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="text-page">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -112,6 +115,7 @@
             </tr>
           </table>
         </section>
+        </div>
       </section>
       <section class="container-customers">
         <h2 class="visually-hidden">Наши клиенты</h2>
@@ -139,30 +143,34 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="map footer-contacts">
         <img src="img/content/index/map-marker.jpg" width="1440" height="785" alt="Карта" aria-label="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8, тел. +7 (812)275-75-75">
-        <h3 class="studio-names headnames">Nёrds design studio</h3>
-        <p class="studio-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812)275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
+        <div class="contacts">
+          <h3 class="studio-names headnames">Nёrds design studio</h3>
+          <p class="studio-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812)275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
       </div>
-      <div class="footer-social">
-        <ul>  
-          <li>
-            <a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-down">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-wrapper">
+        <div class="footer-social">
+          <ul>  
+            <li>
+              <a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-down">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
     <section class="modal-form">
