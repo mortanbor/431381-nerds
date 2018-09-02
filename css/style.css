@@ -424,7 +424,7 @@ a.main-header-logo  {
   width: 220px;
 }
 
-.filters {
+.main-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -488,7 +488,7 @@ ul.shop-catalog {
   margin-bottom: 65px;
 }
 
-ul.pagination-list  {
+.pagination ul  {
   display: flex;
   margin: 0;
   padding: 0;
