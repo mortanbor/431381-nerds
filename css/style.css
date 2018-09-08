@@ -522,6 +522,9 @@ p.catalog-item-image {
   background-color: #efc84a;
 }
 
+
+
+
 .container-presentation {
   padding-bottom: 70px;
   border-bottom: 2px solid #eeeeee;
@@ -534,6 +537,7 @@ p.catalog-item-image {
 
 .text-presentation {
   width: 660px;
+  padding-top: 50px;
 }
 
 .text-presentation p {
@@ -542,12 +546,11 @@ p.catalog-item-image {
 }
 
 .text-presentation p:first-child {
-  padding-top: 50px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .text-presentation p:nth-child(2) {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .text-presentation h3,
@@ -558,10 +561,19 @@ p.catalog-item-image {
   list-style: none;
 }
 
+.text-presentation h3 {
+  margin-bottom: 25px;
+}
+
 .list-services li {
   padding-left: 35px;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
+.list-services li:last-child {
+  margin-bottom: 0
+}
+
 
 .list-services li {
   position: relative;
@@ -570,6 +582,7 @@ p.catalog-item-image {
 .list-services li::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   margin-top: 10px;
   width: 25px;
@@ -578,6 +591,7 @@ p.catalog-item-image {
 
 .statistics-presentation {
   width: 360px;
+  padding-top: 16px;
 }
 
 .statistics-presentation p,
@@ -590,16 +604,12 @@ p.catalog-item-image {
 }
 
 .statistics-presentation p {
-  margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 .statistics-presentation h3 {
-  margin-top: 30px;
+  margin-bottom: 41px;
   padding-left: 16px;
-}
-
-.statistics-presentation table {
-  margin-top: 41px;
 }
 
 .statistics-slogan {
@@ -627,33 +637,56 @@ p.catalog-item-image {
 .list-customers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.link-customers {
+  position: relative;
+  width: 260px;
+  height: 180px;
+}
+
+.link-customers::after  {
+  content: "";
+  position: absolute;
+  top: 20;
+  right: -20px;
+  width: 2px;
+  height: 52px;
+  margin-top: -116px;
+  border-right: 2px solid #eeeeee; 
+}
+
+.link-customers:last-child::after  {
+  content: "";
+  position: absolute;
+  top: 20;
+  right: -20px;
+  width: 2px;
+  height: 52px;
+  margin-top: -116px;
+  border-right: none; 
+}
+
+.htmlacademy {
+  margin-top: 10px;
+}
+
 .link-customers a {
-  display: block;
-  padding: 20px;
-
-  vertical-align: middle;
+  display: flex;
+  width: 260px;
+  height: 180px;
+  margin: auto;
 }
 
-.link-customers:first-child a {
-  margin: 43px 27px 22px 12px;
-}
-
-.link-customers:nth-child(2) a {
-  margin: 25px 25px 22px 30px;
-}
-
-.link-customers:nth-child(3) a {
-  margin: 45px 35px 40px 40px;
-}
-
-.link-customers:last-child a {
-  margin: 32px 25px 20px 40px;
+.link-client img {
+  max-width: 100%
+  height: auto;
+  margin: auto;
 }
 
 .main-wrapper {
@@ -728,29 +761,130 @@ ul.shop-catalog {
 
   list-style: none;
 }
+.footer-contacts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
 .contacts {
-  width: 320px;
+  position: absolute;
+  top: 0;
+  left: 5;
+  display: block;
+  width: 319px;
+  height: 308px;
+  margin-top: 56px;
+  background-color: #ffffff;
+}
+
+.contacts-address h3,
+.contacts-address p
+.contacts-address a {
   margin: 0;
+  padding: 0;
+}
+
+.contacts-address {
+  padding: 50px;
+}
+
+.contacts-address h3 {
+  margin-bottom: 23px;
+}
+
+.studio-adress {
+  max-width: 210px;
+  margin-bottom: 17px;
+}
+
+.phone {
+  margin-bottom: 38px;
+}
+
+.contacts-address .button {
+  display: inline-block;
+  padding: 15px 43px;
 }
 
 .footer-wrapper {
   display: flex;
+  margin-top: 67px;
 }
 
 .footer-social ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
   
   list-style: none;
 }
 
 .footer-social {
-  width: 260px;
+  margin-right: 140px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
 }
 
 .footer-down {
   width: 550px;
+}
+
+.modal-form {
+  width: 960px;
+  height: 590px;
+  background-color: yellow;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-wrapper h2,
+.modal-wrapper button {
+  margin: 0;
+  padding: 0;
+}
+
+.write-form p {
+  margin: 0;
+  padding: 0; 
+}
+
+.write-form {
+  width: 760px;
+  padding: 150px;
+}
+
+
+.appointment-item {
+  width: 360px;
+}
+
+.message-item {
+  width: 760px;
 }
