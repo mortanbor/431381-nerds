@@ -35,29 +35,34 @@
           </ul>
         </div>
   		</nav>
-      <div class="slider container">
-        <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+      <div class="slider">
+        <div class="container">
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>   
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h2>Долго, дорого,<br> скрупулезно.</h2>
+              <p class="text-page">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h2>Любим математику как никто другой</h2>
+              <p class="text-page">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h2>Только ночь,<br> только хардкор</h2>
+              <p class="text-page">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+          </ul>
         </div>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h2>Долго, дорого,<br> скрупулезно.</h2>
-            <p class="text-page">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h2>Любим математику как никто другой</h2>
-            <p class="text-page">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h2>Только ночь,<br> только хардкор</h2>
-            <p class="text-page">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-        </ul>
       </div>
   	</header>
     <main class="container">
@@ -152,13 +157,15 @@
     </main>
     <footer class="main-footer">
       <div class="map footer-contacts">
-        <img src="img/content/index/map-marker-short.jpg" width="1440" height="785" alt="Карта" aria-label="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8, тел. +7 (812)275-75-75">
-        <div class="contacts">
-          <div class="contacts-address">
-            <h3 class="studio-names headnames">Nёrds design studio</h3>
-            <p class="studio-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="phone">тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#">Напишите нам</a>
+        <div class="container-contacts">
+          <img src="img/content/index/map-marker-short.jpg" width="1440" height="785" alt="Карта" aria-label="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8, тел. +7 (812)275-75-75">
+          <div class="contacts">
+            <div class="contacts-address">
+              <h3 class="studio-names headnames">Nёrds design studio</h3>
+              <p class="studio-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="phone">тел. +7 (812) 275-75-75</p>
+              <a class="button" href="#">Напишите нам</a>
+            </div>
           </div>
         </div>
       </div>
@@ -196,13 +203,13 @@
     <section class="modal-form">
       <div class="modal-wrapper">
         <h2>Напишите нам</h2>
-        <button class="button" type="button" aria-label="Закрыть окно написать нам">Закрыть окно</button>
+        <button class="cross-close" type="button" aria-label="Закрыть окно написать нам"></button>
         <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="appointment-item">
+          <p class="appointment-item item-name">
             <label for="name-form">Ваше имя:</label>
             <input id="name-form" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <p class="appointment-item">
+          <p class="appointment-item email-name">
             <label for="mail-form">Ваш e-mail:</label>
             <input id="mail-form" type="email" name="e-mail" placeholder="e-mail@example.com">
           </p>
@@ -210,7 +217,7 @@
             <label for="message-form">Текст письма:</label>
             <textarea id="message-form" name="message" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button login-form" type="submit">Отправить</button>
         </form>  
       </div>
     </section>
