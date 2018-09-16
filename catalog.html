@@ -29,8 +29,8 @@
             </li>
           </ul>
           <ul class="user-navigation">
-            <li>
-              <a class="login-link" href="#">Корзина</a>
+            <li class="login-link" >
+              <a href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
                 </div>
               </fieldset>
               <fieldset>
-                <legend class="headnames">Сетка:</legend>
+                <legend class="headnames filters-type">Сетка:</legend>
                 <ul>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="option" value="adaptive" checked>
@@ -76,25 +76,25 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend class="headnames">Особенности:</legend>
+                <legend class="headnames filters-type">Особенности:</legend>
                 <ul>
-                  <li class="filter-feature">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
                     <label class="filterstext" for="filter-slider">Слайдер</label>
                   </li>
-                  <li class="filter-feature">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-advantblock" name="advantblock">
                     <label class="filterstext" for="filter-advantblock">Блок преимуществ</label>
                   </li>
-                  <li class="filter-feature">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
                     <label class="filterstext" for="filter-news">Новости</label>
                   </li>
-                  <li class="filter-feature">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-gallery" name="gallery">
                     <label class="filterstext" for="filter-gallery">Галерея</label>
                   </li>
-                  <li class="filter-feature">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
                     <label class="filterstext" for="filter-basket">Корзина</label>
                   </li>
@@ -105,10 +105,10 @@
         </section>
           <section class="shop">
             <div class="shop-progress">
-              <h2 class="headnames">Сортировать</h2>
+              <h2 class="headnames">Сортировать:</h2>
               <ul class="pricesort">
                 <li>
-                  <a href="#">По цене</a>
+                  <a class="current-sort" href="#">По цене</a>
                 </li>
                 <li>
                   <a href="#">По типу</a>
@@ -119,10 +119,10 @@
               </ul>
               <ul class="pricecursor">
                 <li>
-                  <a href="#">По убыванию</a>
+                  <a class="sorting pricecursor-up current-sort" href="#">По убыванию</a>
                 </li>
                 <li>
-                  <a href="#">По возрастанию</a>
+                  <a class="sorting pricecursor-down" href="#">По возрастанию</a>
                 </li>
               </ul>
             </div>
