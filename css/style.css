@@ -376,7 +376,7 @@ a {
 
 .percent {
   font-size: 25px;
-  line-height: 10,06px;
+  line-height: 10px;
   font-weight: 700;
   vertical-align: super;
 }
@@ -692,7 +692,7 @@ ul.pricesort {
 
 .pricesort li:last-child {
   margin-right: 0;
-}
+} 
 
 .pricesort {
   display: flex;
@@ -713,7 +713,7 @@ ul.pricesort {
 }
 
 .pricesort a:active {
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .pricesort a.current-sort {
@@ -1210,7 +1210,7 @@ p.catalog-item-image {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 ul.shop-catalog {
@@ -1280,14 +1280,13 @@ ul.shop-catalog {
   display: none;
   box-sizing: border-box;
   width: 360px;
-  max-height: 300px;
+  
   padding-top: 31px;
   padding-bottom: 43px;
 
   text-align: center;
   background-color: #e9e9e9;
-  overflow-y: scroll;
-}
+ }
 
 .card-link h2 {
   margin: 0 auto;
@@ -1297,11 +1296,15 @@ ul.shop-catalog {
 
 .card-link p {
   width: 240px;
+  max-height: 300px;
   margin: 0 auto;
   margin-bottom: 32px;
+
   line-height: 18px;
   text-align: center;
   color: #666666;
+
+  overflow-y: auto;
 }
 
 .card-link a {
@@ -1322,7 +1325,6 @@ p.card-points {
 
 .circle {
   display: block;
-  box-sizing: border-box;
   width: 14px;
   height: 14px;
 
@@ -1330,7 +1332,6 @@ p.card-points {
 
   background-color: #ffffff;
 
-  border: 2px solid #ffffff;
   border-radius: 50%;
 }
 
@@ -1555,11 +1556,10 @@ p.email-name {
 .appointment-item label {
   margin-bottom: 9px;
 
-  font-size: 16px;.
+  font-size: 16px;
   line-height: 18px;
   font-weight: 700;
 
-  cursor: pointer;
 }
 
 .appointment-item input {
@@ -1576,11 +1576,11 @@ p.email-name {
 
   font: inherit;
   line-height: 18px;
-  color: rgba(68. 68. 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
 
   background-color: #ffffff;
   border: none;
-  box-shadow: 0 0 0 2px rgba(215, 220, 222) inset;
+  box-shadow: 0 0 0 2px rgb(215, 220, 222) inset;
 }
 
 .appointment-item textarea {
@@ -1598,7 +1598,7 @@ p.message-item {
   width: 100%;
   height: 118px;
   font: inherit;
-  color: rgba(68. 68. 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
   margin-bottom: 47px;
   padding-top: 11px;
   padding-left: 15px;
@@ -1606,17 +1606,17 @@ p.message-item {
 
   background-color: #ffffff;
   border: none;
-  box-shadow: 0 0 0 2px rgba(215, 220, 222) inset;
+  box-shadow: 0 0 0 2px rgb(215, 220, 222) inset;
 }
 
 .write-form input[type="text"]:hover,
 .write-form input[type="email"]:hover,
 .write-form textarea:hover {
-  color: rgba(68. 68. 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
 
   background-color: #ffffff;
 
-  box-shadow: 0 0 0 2px rgba(180, 185, 187) inset;
+  box-shadow: 0 0 0 2px rgb(180, 185, 187) inset;
 }
 
 .write-form input[type="text"]:focus,
@@ -1626,7 +1626,7 @@ p.message-item {
 
   background-color: #ffffff;
 
-  box-shadow: 0 0 0 2px rgba(0, 0, 0) inset;
+  box-shadow: 0 0 0 2px rgb(0, 0, 0) inset;
 }
 
 .write-form input:invalid { 
