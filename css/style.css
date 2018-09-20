@@ -11,9 +11,10 @@ body {
 }
 
 img {
+  display: block;
+
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -332,12 +333,12 @@ a {
   box-shadow: 0 3px rgba(0, 1, 1, 0.1) inset;
 }
 
-.pagination-item-current a{
+.pagination-item-current a {
   background-color: #ffffff;
-  box-shadow: inset 0 0 0 2px #dbdbdb;
+  box-shadow: 0 0 0 2px #dbdbdb inset;
 }
 
-.next a{
+.next a {
   padding: 16px 78px;
 
   text-transform: uppercase;
@@ -503,8 +504,7 @@ a {
   margin-left: 10px;
   padding: 10px 10px;
 
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
+  font: inherit;
   text-align: center;
   color: #283136;
 
@@ -597,35 +597,19 @@ a {
   opacity: 0.4;
 }
 
-.filter-input-radio + label:hover::before,
-.filter-input-radio:checked + label:hover::after,
-.filter-input-radio + label:focus::before,
-.filter-input-radio:checked + label:focus::after {
+.filter-input + label:hover::before,
+.filter-input:checked + label:hover::after,
+.filter-input + label:focus::before,
+.filter-input:checked + label:focus::after {
   border-color: #4d4d4d;
   opacity: 1;
 }
 
 
-.filter-input-radio + label:hover,
-.filter-input-radio:checked + label:hover,
-.filter-input-radio + label:focus,
-.filter-input-radio:checked + label:focus {
-  color: #000000;
-  opacity: 1;
-}
-
-.filter-input-checkbox + label:hover::before,
-.filter-input-checkbox:checked + label:hover::after,
-.filter-input-checkbox + label:focus::before,
-.filter-input-checkbox:checked + label:focus::after {
-  border-color: #4d4d4d;
-  opacity: 1;
-}
-
-.filter-input-checkbox + label:hover,
-.filter-input-checkbox:checked + label:hover,
-.filter-input-checkbox + label:focus,
-.filter-input-checkbox:checked + label:focus {
+.filter-input + label:hover,
+.filter-input:checked + label:hover,
+.filter-input + label:focus,
+.filter-input:checked + label:focus {
   color: #000000;
   opacity: 1;
 }
@@ -760,17 +744,21 @@ a.sorting {
   opacity: 0.2;
 }
 
-a.pricecursor-down{
+a.pricecursor-down {
   transform: rotate(180deg);
 }
 
-a[href].sorting:hover,
+a.sorting:hover,
 a.sorting:focus {
   opacity: 0.5;
 }
 
-a[href].sorting:active {
+a.sorting:active {
   opacity: 1;
+}
+
+a.current-sort {
+  list-style: none;
 }
 
 .pricecursor a.current-sort {
@@ -945,7 +933,7 @@ a[href].sorting:active {
   padding: 0;
 }
 
-li.catalog-item  {
+li.catalog-item {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -963,7 +951,7 @@ li.catalog-item  {
   margin-left: 0;
 }
 
-.catalog-item .catalog-item-tagline {
+.catalog-item-tagline {
   order: 3;
 }
 
@@ -1150,7 +1138,7 @@ p.catalog-item-image {
   height: 180px;
 }
 
-.link-customers::after  {
+.link-customers::after {
   content: "";
   position: absolute;
   top: 65px;
@@ -1160,7 +1148,7 @@ p.catalog-item-image {
   border-right: 2px solid #eeeeee; 
 }
 
-.link-customers:last-child::after  {
+.link-customers:last-child::after {
   content: "";
   position: absolute;
   top: 65px;
@@ -1173,7 +1161,7 @@ p.catalog-item-image {
 .link-customers a {
   display: flex;
   width: 260px;
-  min-height: 180px;*/
+  min-height: 180px;
   margin:  0 auto;
 }
 
@@ -1187,12 +1175,26 @@ p.catalog-item-image {
   margin-top: 62px;
 }
 
+.borodinski img {
+  margin-top: 45px;
+}
+
+.pink img {
+  margin-top: 66px;
+}
+
+.mishka img {
+  margin-top: 49px;
+}
+
 .main-catalog { 
+  display: block;
   padding-top: 54px;
   padding-bottom: 59px;
 }
 
 .main-about {
+  display: block;
   padding-top: 79px;
   padding-bottom: 81px;
 }
@@ -1354,33 +1356,38 @@ p.card-points {
   background-color: #ffffff;
 }
 
-.contacts-address h3,
-.contacts-address p
-.contacts-address a {
+.contacts h2,
+.contacts p {
   margin: 0;
   padding: 0;
 }
 
-.contacts-address {
-  padding: 49px 50px 50px 50px;
-}
-
-.contacts-address h3 {
+.contacts h2 {
   margin-bottom: 23px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
-.studio-adress {
-  max-width: 210px;
+.contacts p {
+  padding-left: 50px;
+}
+
+p.studio-adress {
   margin-bottom: 17px;
 }
 
-.phone {
-  margin-bottom: 40px;
+p.phone {
+  margin-bottom: 37px;
 }
 
-.contacts-address .button {
-  display: block;
-  padding: 15px 43px;
+.contacts a {
+  width: 200px;
+  margin: 0 auto;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  text-align: center;
 }
 
 .footer-wrapper {
@@ -1604,7 +1611,8 @@ p.message-item {
   box-shadow: 0 0 0 2px rgba(180, 185, 187) inset;
 }
 
-.write-form input:focus,
+.write-form input[type="text"]:focus,
+.write-form input[type="email"]:focus,
 .write-form textarea:focus {
   color: #000000;
 
