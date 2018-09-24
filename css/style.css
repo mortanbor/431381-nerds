@@ -627,11 +627,18 @@ a {
   opacity: 1;
 }
 
-
 .filter-input + label:hover,
 .filter-input:checked + label:hover,
 .filter-input + label:focus,
 .filter-input:checked + label:focus {
+  color: #000000;
+  opacity: 1;
+}
+
+.filter-option input[type="checkbox"]:focus + label::before,
+.filter-option input[type="checkbox"]:focus + label::after,
+.filter-option input[type="radio"]:focus + label::before,
+.filter-option input[type="radio"]:focus + label::after {
   color: #000000;
   opacity: 1;
 }
@@ -1410,8 +1417,6 @@ ul.shop-catalog {
   line-height: 18px;
   text-align: center;
   color: #666666;
-
-  overflow-y: auto;
 }
 
 .card-link a {
@@ -1501,6 +1506,7 @@ p.card-points {
 }
 
 p.studio-adress {
+  width: 205px;
   margin-bottom: 17px;
 }
 
@@ -1595,6 +1601,36 @@ p.phone {
   margin-bottom: 9px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-form {
   position: fixed;
   top: 50%;
@@ -1614,6 +1650,14 @@ p.phone {
       -ms-transform: translate(-50%, -50%);
 
           transform: translate(-50%, -50%);
+}
+
+.modal-show {
+  display: block;
+
+  -webkit-animation: bounce 0.5s;
+
+          animation: bounce 0.5s;
 }
 
 .modal-wrapper {
