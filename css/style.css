@@ -1631,6 +1631,84 @@ p.phone {
   }
 }
 
+@-webkit-keyframes swing {
+  0% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(0deg);
+            transform:  translate(-50%, -50%) rotate(0deg);
+  }
+  20% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(15deg);
+            transform:  translate(-50%, -50%) rotate(15deg);
+  }
+  40% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(-10deg);
+            transform:  translate(-50%, -50%) rotate(-10deg);
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(5deg);
+            transform:  translate(-50%, -50%) rotate(5deg);
+  }
+  80% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(-5deg);
+            transform:  translate(-50%, -50%) rotate(-5deg);
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(0deg);
+            transform:  translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(0deg);
+            transform:  translate(-50%, -50%) rotate(0deg);
+  }
+  20% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(15deg);
+            transform:  translate(-50%, -50%) rotate(15deg);
+  }
+  40% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(-10deg);
+            transform:  translate(-50%, -50%) rotate(-10deg);
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(5deg);
+            transform:  translate(-50%, -50%) rotate(5deg);
+  }
+  80% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(-5deg);
+            transform:  translate(-50%, -50%) rotate(-5deg);
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    -webkit-transform:  translate(-50%, -50%) rotate(0deg);
+            transform:  translate(-50%, -50%) rotate(0deg);
+  }
+}
+
 .modal-form {
   position: fixed;
   top: 50%;
@@ -1658,6 +1736,16 @@ p.phone {
   -webkit-animation: bounce 0.5s;
 
           animation: bounce 0.5s;
+}
+
+.modal-error {
+  -webkit-animation: swing linear 1s;
+          animation: swing linear 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
 }
 
 .modal-wrapper {
